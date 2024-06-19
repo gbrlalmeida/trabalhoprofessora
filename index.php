@@ -15,6 +15,8 @@
         session_start();
         if (isset($_SESSION['academia_id'])) {
             echo '<p>Bem-vindo ao seu painel!</p>';
+            echo '<a href="realizar.php">Realizar Avaliação</a>';
+            echo '<a href="consultar.php">Consultar Avaliações</a>';
             echo '<a href="logout.php" class="btn">Logout</a>';
         } else {
             echo '<a href="login.php" class="btn">Login</a>';
