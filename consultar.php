@@ -30,6 +30,7 @@
             <th>IMC</th>
             <th>Observação</th>
         </tr>
+
         <?php
       
         $conn = new mysqli('localhost', 'root', '', 'systemgym');
@@ -70,5 +71,14 @@
         $conn->close();
         ?>
     </table>
+    </br>
+        <p>IMC:</p>
+    <p> MENOR QUE 18,5	   MAGREZA	0</p>
+    <p> ENTRE 18,5 E 24,9  NORMAL	0</p>
+    <p> ENTRE 25,0 E 29,9  SOBREPESO	I</p>
+    <p> ENTRE 30,0 E 39,9  OBESIDADE	II</p>
+    <p> MAIOR QUE 40,0	   OBESIDADE GRAVE	III</p>
+    </p>
 </body>
 </html>
+
